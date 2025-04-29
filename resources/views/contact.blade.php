@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
+    <title>{{ $titolo }}</title>
 </head>
 <body>
     <header>
@@ -15,8 +15,9 @@
     </header>
 
     <main>
-        <h1>Hello {{ $nome }}</h1>
-        <h3>{{ $messaggio }}</h3>
+        <h1>{{ $titolo }}</h1>
+        <p>Email: {{ $email }}</p>
+        <p>Telefono: {{ $telefono }}</p>
     </main>
 </body>
 </html>

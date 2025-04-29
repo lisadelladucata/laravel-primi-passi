@@ -22,3 +22,23 @@ Route::get('/', function () {
         'messaggio' => $messaggio,
     ]);
 });
+
+Route::get('/chi-siamo', function () {
+    $team = ['Alice', 'Bob', 'Charlie'];
+
+    return view('about', [
+        'titolo' => 'Chi siamo',
+        'team' => $team,
+    ]);
+});
+
+Route::get('/contatti', function () {
+    $email = 'info@example.com';
+    $telefono = '+39 123 456 789';
+
+    return view('contact', [
+        'titolo' => 'Contattaci',
+        'email' => $email,
+        'telefono' => $telefono,
+    ]);
+});
