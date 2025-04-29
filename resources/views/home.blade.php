@@ -5,6 +5,7 @@
     <title>Homepage</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>Hello {{ $nome }}</h1>
+    <h3>{{ $messaggio }}</h3>
 </body>
 </html>
